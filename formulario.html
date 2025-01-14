@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 25px;
+            color: brown;
+        }
+        
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1>Formulario de información</h1>
+    <form action="procesareseva.php">
+    <fieldset>
+        <legend>Sus Datos</legend>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 18px;">
+        <label for="nom">Nombre y apellidos:</label>
+        <input type="text" maxlength="50"
+        name="nombre" autofocus
+        id="nom">
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 18px;">
+        <label for="cont">Contraseña:</label>
+        <input type="text" maxlength="8"
+        name="cont" 
+        id="cont">
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 18px;" >
+        <label for="usu">Usuario:</label>
+        <input type="text"
+        maxlength="10"
+        name="usu" readonly
+        placeholder="anónimo"
+        id="usu">
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 18px;">
+        <label for="ap">Nivel:</label>
+    <p style="font-weight: bold;">
+        <input type="radio" value="P"
+        id="prof" name="nivel">
+        <label for="prof">Profesional</label>
+    </p>
+    <p style="font-weight: bold;">            
+        <input type="radio" value="A"
+        checked id="avn" name="nivel">
+        <label for="avn">Avanzado</label>
+    </p>    
+    <p style="font-weight: bold;">
+        <input type="radio" value="Pr"
+        id="pri" name="nivel">
+        <label for="pri">Principiante</label>
+    </p>
+
+    </p>
+    </fieldset>
+    </p>
+
+    
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 18px;">
+        <label for="nac">Nacionalidad:</label>
+         <select name="nac" id="nac">
+            <option value="es">España</option>
+            <option value="in">Inglaterra</option>
+            <option value="marr">Marruecos</option>
+            <option value="fr">Francia</option>
+            <option value="ch">China</option>
+            <option value="ot">Otra</option>
+         </select>   
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 18px;">
+        <label for="des">Descripción:</label>
+        <textarea name="des"
+        cols="20"
+        id="des"></textarea>
+    </p>
+    <p style="font-weight: bold;">
+        <input type="checkbox" name="des"
+        checked id="des">
+        <label for="des">Deseo recibir información sobre novedades y ofertas</label>
+    </p>
+    <p style="font-weight: bold;">
+        <input type="checkbox" name="dec"
+        id="dec">
+        <label for="dec">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+    </p>
+    <p>
+        <label for="foto">Adjuntar foto:</label>
+        <input type="file" name="fot" id="foto">
+    </p>
+    
+    <p>
+        <input type="submit" value="Enviar"> 
+        <input type="reset" value="Borrar datos">
+    </p>
+    <p>
+        <a href="tarea2.html">Volver</a>
+    </p>
+
+</body>
+</html>
